@@ -1,0 +1,104 @@
+body {
+    font-family: Helvetica;
+    background-color: aliceblue
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url("../assets/asdlkamlsd.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 8px;
+}
+.banner-img{
+    border: 1px solid;
+    height: 576px;
+    width: 1366px;
+    background-image: url("../assets/banner_placeholder.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* main>section {
+    height: 800px;
+} */
+
+.section-content {
+    text-align: center;
+}
+
+/* form sub section ----------------------------------------------------------------------------------------------------*/
+.form-container {
+    width: 600px;
+    /* margin: 50px auto; */
+}
+    
+.form-row{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 120px;
+    padding-top: 5px;
+}
+
+.form-row input[type="text"], .form-row input[type="date"], .form-row textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+.form-row textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form-row .gender {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.submit-row {
+    text-align: center;
+}
+
+button{
+    padding: 10px 50%;
+    border: 1px solid #666;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #ddd;
+}
+
+/* form sub section end ----------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: end;
+}

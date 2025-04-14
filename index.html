@@ -7,11 +7,137 @@
 
         <title>The Company</title>
 
+        <!-- External Files link -->
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
+
     </head>
 
     <body>
+        <!-- Header Content -->
+        <header class="main-header">
+            <!-- logo -->
+            <div class="main-logo"></div>
+
+            <!-- navigaton Bar -->
+             <nav>
+                <a href="#home-section">Home</a>
+                <a href="#our-profile-section">Our Profile</a>
+                <a href="#portfolio-section">Portfolio</a>
+                <a href="#message-us-section">Message Us</a>
+             </nav>
+        </header>
         
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home-section">
+                
+                <header>
+                    <h2>Hi _!, Welcome to my website</h2>
+                </header>
+                
+                <!-- Banner Image -->
+                <div class="banner-img"></div> <!-- image needs to be 1366x578 (not yet done)-->
+
+                <!-- Banner Text -->
+                <article class="section-content">
+                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                </article>
+
+            </section>
+
+            <hr/> <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+            <!-- Our Profile Section -->
+            <section id="our-profile-section">
+
+                <header>
+                    <h2>Our Profile</h2>
+                </header>
+
+            <!-- Section Text -->
+                <article class="section-content">
+                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                </article>
+
+            </section>
+
+            <hr/> <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+            <!-- Portfolio Section -->
+            <section id="portfolio-section">
+
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+
+            <!-- Section Text -->
+                <article class="section-content">
+                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                </article>
+
+            </section>
+
+            <hr/> <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+            <!-- Message Us Section -->
+            <section id="message-us-section">
+                <div class="form-container">
+                    <h2>Message Us</h2>
+
+                <!-- Section Text -->
+                    <form action="">
+
+                        <div class="form-row">
+                            <label for="name">Nama : </label>  
+                            <input type="text" id="name">
+                        </div>
+
+                        </br>
+                        
+                        <div class="form-row">
+                            <label for="tanggal_lahir">Tanggal Lahir : </label>
+                            <input type="date" id="dob">
+                        </div>
+                        
+                            </br>
+
+                        <div class="form-row">
+                            <label for="jenis_kelamin">Jenis Kelamin : </label>
+                            
+                            <div class="gender">
+                                <input type="radio" id="lakilaki"  name="jk" value="Laki-laki">
+                                <label for="male">Laki-Laki</label>
+                                <input id="perempuan" type="radio" name="jk" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+        
+                        </br>
+
+                        <div class="form-row">
+                            <label for="pesan">Pesan : </label>
+                            <textarea id="message" placeholder="Ketik Disini"> </textarea>
+                        </div>
+                        
+                        <div class="submit-row">
+                            <button type="submit">Submit</button>
+                        </div>
+                        
+
+                        <br>
+                    </form>
+                </div>
+            </section>
+
+            <hr/> <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+        </main>
+        
+        <!-- Footer Content -->
+        <footer>
+            <span>Made by MokaChaos</span>
+        </footer>
     </body>
 </html>
