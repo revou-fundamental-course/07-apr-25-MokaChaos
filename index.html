@@ -5,27 +5,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>The Company</title>
+        <title>Artocomms</title>
 
         <!-- External Files link -->
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/script.js"></script>
-
     </head>
 
     <body>
         <!-- Header Content -->
         <header class="main-header">
             <!-- logo -->
-            <div class="main-logo"></div>
+            <!-- <div class="main-logo"></div> -->
 
             <!-- navigaton Bar -->
-             <nav>
+             <!-- <nav>
                 <a href="#home-section">Home</a>
                 <a href="#our-profile-section">Our Profile</a>
                 <a href="#portfolio-section">Portfolio</a>
                 <a href="#message-us-section">Message Us</a>
-             </nav>
+             </nav> -->
+
+             <nav class="navbar">
+                <div class="logo">
+                  <!-- <img src="logo.png" alt="Logo" /> -->
+                </div>
+
+                <ul class="nav-links">
+                  <li><a href="#home-section">Home</a></li>
+                  <li><a href="#our-profile-section">Our Profile</a></li>
+                  <li><a href="#portfolio-section">Portfolio</a></li>
+                  <li><a href="#message-us-section">Message Us</a></li>
+                </ul>
+              </nav>
+
         </header>
         
         <!-- Main Content -->
@@ -33,16 +45,50 @@
             <!-- Home Section -->
             <section id="home-section">
                 
-                <header>
-                    <h2>Hi _!, Welcome to my website</h2>
-                </header>
+
+                <div class="header-container">
+                    <header>
+                        <h2>Hi <span id = username>User</span>!, Welcome to ArtoComms</h2>
+                    </header>
+                    <!-- <div id="change-name"> -->
+                        <button type="button" class="ch-name-button" id="tombol">Change Name</button>
+                    <!-- </div>     -->
+                </div>
                 
                 <!-- Banner Image -->
                 <div class="banner-img"></div> <!-- image needs to be 1366x578 (not yet done)-->
 
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="assets/banner_1.png" style="width:100%">
+                      <div class="text">Banner 1</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="assets/banner_2.png" style="width:100%">
+                      <div class="text">Banner 2</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="assets/banner_3.png" style="width:100%">
+                      <div class="text">Banner 3</div>
+                    </div>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
                 <!-- Banner Text -->
                 <article class="section-content">
-                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                    <h3>Welcome to the world of Character Designs</h3>
+                    <p>Step into a universe where imagination meets digital art. I'm a digital artist passionate about creating vibrant, expressive anime and manga-inspired Character Designs. From fan art to original characters, each piece is drawn with love for the art form and the stories it tells. Whether you're a fellow fan or looking to commission something unique, you're in the right place.</p>
                 </article>
 
             </section>
@@ -58,7 +104,9 @@
 
             <!-- Section Text -->
                 <article class="section-content">
-                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                    <p> Hi! I'm MokaChaos, an independent digital illustrator specializing in anime and manga-style artwork. With a background in traditional drawing and a love for Japanese pop culture, I bring characters to life through expressive lines, dynamic compositions, and bold color palettes.
+                        
+                        I focus on character design, storytelling through visuals, and creating art that connects with the anime community. I work with both individual clients and creative teams, offering commissions, prints, and collaborative projects.</p>
                 </article>
 
             </section>
@@ -74,7 +122,20 @@
 
             <!-- Section Text -->
                 <article class="section-content">
-                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                    <p>Explore a curated collection of my latest digital artworks in <span><b><a href="https://www.fiverr.com/share/X06zdP">Here</a></b></span>, featuring a mix of fan art and original characters. Each illustration showcases my passion for anime aesthetics, attention to detail, and storytelling through color and expression.</p>                    
+                    
+                    <div class="list-container">
+                        <p>Highlights include:</p>
+                        <ul class="port-list">
+                            <li>Original Character Concepts</li>                        
+                            <li>Anime-Inspired Illustrations</li>                         
+                            <li>Fan Art from Popular Series</li>                        
+                            <li>Commissioned Pieces</li>    
+                        </ul>
+                    </div>
+                    
+                    <p>New works are added regularly—feel free to take a look around!</p>
+                        
                 </article>
 
             </section>
@@ -90,39 +151,37 @@
                     <form action="">
 
                         <div class="form-row">
-                            <label for="name">Nama : </label>  
+                            <label for="name">Name : </label>  
                             <input type="text" id="name">
                         </div>
 
                         </br>
                         
                         <div class="form-row">
-                            <label for="tanggal_lahir">Tanggal Lahir : </label>
+                            <label for="dob">Date of Birth : </label>
                             <input type="date" id="dob">
                         </div>
                         
                             </br>
 
                         <div class="form-row">
-                            <label for="jenis_kelamin">Jenis Kelamin : </label>
+                            <p>Gender : </p>
                             
                             <div class="gender">
-                                <input type="radio" id="lakilaki"  name="jk" value="Laki-laki">
-                                <label for="male">Laki-Laki</label>
-                                <input id="perempuan" type="radio" name="jk" value="Perempuan">
-                                <label for="female">Perempuan</label>
+                                <label><input type="radio" name="jk" value="Laki-laki"> Male</label>
+                                <label><input type="radio" name="jk" value="Perempuan"> Female</label>
                             </div>
                         </div>
         
                         </br>
 
                         <div class="form-row">
-                            <label for="pesan">Pesan : </label>
-                            <textarea id="message" placeholder="Ketik Disini"> </textarea>
+                            <label for="message">Message : </label>
+                            <textarea id="message" placeholder="Type here"> </textarea>
                         </div>
                         
                         <div class="submit-row">
-                            <button type="submit">Submit</button>
+                            <button type="button" id="tbl-submit">Submit</button>
                         </div>
                         
 
@@ -139,5 +198,7 @@
         <footer>
             <span>Made by MokaChaos</span>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
