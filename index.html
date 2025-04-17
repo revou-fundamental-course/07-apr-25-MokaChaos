@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+    
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Artocomms</title>
+        <title>Artocomms : Where imagination meets digital art</title>
 
         <!-- External Files link -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
     <body>
-        <!-- Header Content -->
+        <!-- Header/Nav Bar Content -->
         <header class="main-header">
-            <!-- logo -->
-            <!-- <div class="main-logo"></div> -->
-
-            <!-- navigaton Bar -->
-             <!-- <nav>
-                <a href="#home-section">Home</a>
-                <a href="#our-profile-section">Our Profile</a>
-                <a href="#portfolio-section">Portfolio</a>
-                <a href="#message-us-section">Message Us</a>
-             </nav> -->
-
              <nav class="navbar">
-                <div class="logo">
-                  <!-- <img src="logo.png" alt="Logo" /> -->
+
+                <!-- Left side container div -->
+                <div class="nav-left">
+                    <div class="logo">
+                        <!-- <img src="logo.png" alt="Logo" /> -->
+                      </div>
+                      <div class="logo-name">
+                          <!-- <img src="assets/logo_name.png" alt="Artofee"> -->
+                      </div>
                 </div>
 
+                <!-- Link Section -->
                 <ul class="nav-links">
                   <li><a href="#home-section">Home</a></li>
                   <li><a href="#our-profile-section">Our Profile</a></li>
@@ -39,13 +38,13 @@
               </nav>
 
         </header>
-        
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
         <!-- Main Content -->
         <main>
             <!-- Home Section -->
             <section id="home-section">
                 
-
                 <div class="header-container">
                     <header>
                         <h2>Hi <span id = username>User</span>!, Welcome to ArtoComms</h2>
@@ -62,19 +61,19 @@
                     <div class="mySlides fade">
                       <div class="numbertext">1 / 3</div>
                       <img src="assets/banner_1.png" style="width:100%">
-                      <div class="text">Banner 1</div>
+                      <div class="text">1</div>
                     </div>
                     
                     <div class="mySlides fade">
                       <div class="numbertext">2 / 3</div>
                       <img src="assets/banner_2.png" style="width:100%">
-                      <div class="text">Banner 2</div>
+                      <div class="text">2</div>
                     </div>
                     
                     <div class="mySlides fade">
                       <div class="numbertext">3 / 3</div>
                       <img src="assets/banner_3.png" style="width:100%">
-                      <div class="text">Banner 3</div>
+                      <div class="text">3</div>
                     </div>
                 </div>
                 <br>
@@ -143,12 +142,13 @@
             <hr/> <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 
             <!-- Message Us Section -->
+
             <section id="message-us-section">
+                <h2>Message Us</h2>
                 <div class="form-container">
-                    <h2>Message Us</h2>
 
                 <!-- Section Text -->
-                    <form action="">
+                    <form action="" class="the-form" id="message-form">
 
                         <div class="form-row">
                             <label for="name">Name : </label>  
@@ -181,12 +181,14 @@
                         </div>
                         
                         <div class="submit-row">
-                            <button type="button" id="tbl-submit">Submit</button>
+                            <button type="submit" id="tbl-submit">Submit</button>
                         </div>
                         
 
                         <br>
                     </form>
+
+                    <div id="output" class="output-box"></div>
                 </div>
             </section>
 
@@ -196,7 +198,7 @@
         
         <!-- Footer Content -->
         <footer>
-            <span>Made by MokaChaos</span>
+            <span>Made by Alif Fadhlurrahman Hadi</span>
         </footer>
 
         <script src="js/script.js"></script>
